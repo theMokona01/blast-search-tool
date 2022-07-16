@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = 'utf-8'>
+ 	<title>BLAST Search</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+        <link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css'/>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+</head>
+
+<body id = 'main'>
+
+	<h4>Final Project - Dylan Diaz</h4>
+	<h4>Blast Search Tool</h4>
+	<form name = 'DNA_search' id = 'DNA_search' >
+		
+		<label for= 'DNA'> DNA Sequence: </label>
+		<input type = 'search' name = 'DNA' id = 'DNA' value = '' />
+		<input type = 'submit' name = 'submit' id = 'submit' value = 'Submit'/> 
+	</form>
+	<section id='results'>
+	
+		<p>
+			Sequence length: <span id= 'seqLength'>0</span> 
+		</p>
+
+		<p>
+			Blast Alignments: <span id= 'numBlastAlignments'>0</span>
+		</p>
+
+		<table >
+			<thead>	
+			<tr>
+				<td>ID</td>
+				<td>Score</td>
+				<td>BE-Value</td>
+				<td>Strand</td>
+				<td>Percent Identity</td>
+				<td>Sequence Length</td>
+			</tr>
+			</thead>
+		<tbody id = 'blast'>
+		</tbody>
+		</table> 		
+
+    </section> 
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+
+body {
+    
+    background-color: powderblue;
+}
+h2 {
+    font-size: 120%;
+    font-weight: bold;
+}
+section#results {
+    display: none;
+}
+
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid purple;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 5px;
+  }
+  
+
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+
+  thead, tfoot {
+    background: url(https://cdn.glitch.global/42f746f4-70e6-41f4-9273-6ea55b20c1ae/back.jpg?v=1655706597117);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid purple;
+  }
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e495e4;
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+  }
+  
+  table {
+    background-color: #ff33cc;
+  }
+  
+  /* caption */
+
+caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  
